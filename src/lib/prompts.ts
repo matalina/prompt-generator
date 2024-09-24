@@ -22,6 +22,7 @@ export let generalTopics = [
   '**Ethical Dilemmas**: Reflect on morally ambiguous situations he’s faced and how he feels about them now.',
   '**Setting**: Describe the vibrant cityscape around him, highlighting the magical elements and urban quirks that influence his daily life and experiences.',
   '**Characters**: Introduce intriguing individuals he meets, revealing their backgrounds and how they challenge or resonate with his own beliefs and journey.',
+  '**Random Image**: What does the image inspire?',
 ];
 
 export let postTypes = [
@@ -497,7 +498,9 @@ export let characters = [
 ];
 
 
-export function getPrompt(index: number) {
+export async function getPrompt(index: number) {
+  return getRandomImage();
+
   switch (index) {
     case 0: return getRandomItem(personalExperiences);
     case 1: return getRandomItem(philosphicalMusings);
@@ -520,5 +523,18 @@ export function getPrompt(index: number) {
     case 18: return getRandomItem(ethicalDilemmas);
     case 19: return getRandomItem(setting);
     case 20: return getRandomItem(characters);
+    case 21: return getRandomImage();
   }
+}
+
+export async function getRandomImage() {
+  const response = await fetch ('https://prompt.aj-hunter.com/.netlify/functions/random-image', {
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/json',
+      accept: 'application/json',
+    }
+  });
+  const data = await response.json();
+
 }
