@@ -1,4 +1,5 @@
 import { Handler } from '@netlify/functions';
+import fetch from 'node-fetch';
 
 export const handler: Handler = async (event, context) => {
     const response = await fetch(`http://api.unsplash.com/photos/random?collections=w86QgkX5lAw&client_id=${process.env.ACCESS_KEY}`, {

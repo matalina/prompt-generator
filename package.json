@@ -37,6 +37,7 @@
     "canvas": "^2.11.2",
     "markdown-it": "^13.0.1",
     "netlify": "^13.1.21",
+    "node-fetch": "^3.3.2",
     "svelte-routing": "^1.6.0",
     "timeago.js": "^4.0.2",
     "turndown": "^7.1.2"
