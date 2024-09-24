@@ -14,3 +14,8 @@ export function getRandomItem(items: Array<any>) {
   const index = (Math.floor(Math.random() * items.length) % items.length);
   return items[index];
 }
+
+export function getRandomItemWithIndex(items: Array<any>) {
+  const index = (Math.floor(Math.random() * items.length) % items.length);
+  return {index, item: items[index]};
+}

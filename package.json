@@ -9,7 +9,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@netlify/functions": "^1.6.0",
+    "@netlify/functions": "^2.8.1",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "@tailwindcss/typography": "^0.5.9",
     "@testing-library/svelte": "^3.0.3",
@@ -36,6 +36,7 @@
     "@types/node": "^14.18.47",
     "canvas": "^2.11.2",
     "markdown-it": "^13.0.1",
+    "netlify": "^13.1.21",
     "svelte-routing": "^1.6.0",
     "timeago.js": "^4.0.2",
     "turndown": "^7.1.2"
