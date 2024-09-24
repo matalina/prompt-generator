@@ -6,7 +6,12 @@
   import Answer from "../ui/Answer.svelte";
   import ToggleContent from "../ui/ToggleContent.svelte";
 
-  const md = new MarkdownIt();
+  const md = new MarkdownIt({
+    html: true,
+    xhtmlOut: true,
+    breaks: true,
+    typographer: true,
+});
   let answer;
 
   async function generate() {

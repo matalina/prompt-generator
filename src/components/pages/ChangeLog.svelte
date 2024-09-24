@@ -4,6 +4,14 @@
 
 <div class="prose border p-3 mb-3 rounded-xl">
   <h3>Change Log</h3>
+
+  <Markdown
+  small={true}
+  markdown={`
+#### 1.240924.06
+* Allowed Mardown to have html
+`}
+/>
   <Markdown
   small={true}
   markdown={`
