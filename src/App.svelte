@@ -3,6 +3,7 @@
   import Home from './components/pages/Home.svelte';
 
   import HomeIcon from './assets/home.svg';
+  import ChangeLog from './components/pages/ChangeLog.svelte';
   export let url = '';
 </script>
 
@@ -10,7 +11,7 @@
   <Router {url}>
     <nav class="flex items-center w-full p-3">
       <div class="flex-grow flex text-lg">
-        <Link to="/solo">
+        <Link to="/">
           <div
             class="py-2 px-3 border border-gray-900 text-gray-900 mr-2 focus:bg-gray-200 hover:bg-gray-200"
           >
@@ -19,11 +20,12 @@
         </Link>
       </div>
       <Link class="text-xs text-gray-500 p-2" to="/change-log">
-        v1.240924.02
+        v1.240924.03
       </Link>
     </nav>
     <section>
       <Route path="/" component={Home} />
+      <Route path="/change-log" component={ChangeLog} />
     </section>
   </Router>
 </div>
