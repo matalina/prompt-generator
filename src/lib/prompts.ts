@@ -526,7 +526,7 @@ export async function getPrompt(index: number) {
 }
 
 export async function getRandomImage() {
-    const response = await fetch ('http://prompts.aj-hunter.com/.netlify/functions/random-image', {
+    const response = await fetch ('https://prompts.aj-hunter.com/.netlify/functions/random-image', {
       method: 'get',
     });
     const data = await response.json();
