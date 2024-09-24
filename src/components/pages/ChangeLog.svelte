@@ -7,6 +7,13 @@
   <Markdown
   small={true}
   markdown={`
+#### 1.240924.04
+* Fixed Random Image url
+`}
+/>
+  <Markdown
+  small={true}
+  markdown={`
 #### 1.240924.03
 * Fixed Navigation
 `}
