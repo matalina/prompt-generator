@@ -1,0 +1,46 @@
+{
+  "version": "3",
+  "remote": {
+    "https://edge.netlify.com/": "fd941d61d88673d5f28aab283fb86fcc50f08a3bc80ee5470498fcfa88c65cfb",
+    "https://edge.netlify.com/bootstrap/config.ts": "0aa0a225d978b89e0e62cbd853701605199e7a84095e55eeb70147faf1a24803",
+    "https://edge.netlify.com/bootstrap/context.ts": "b9b4e7cbb67a9d83cb28e45145ba3dfa6f05ad965587ef7e2fb0896da62dd16e",
+    "https://edge.netlify.com/bootstrap/cookie.ts": "8b0baae708989ca183c6f3b4ab3d029e6abcbc2e43f93edeb0ff447b3bbc3a05",
+    "https://edge.netlify.com/bootstrap/edge_function.ts": "b8253e86aa83c67341f5cfedeba5049d77fbf84dcab7eceff7566b7728ae9b39",
+    "https://edge.netlify.com/bootstrap/globals/types.ts": "a92107bafea2f88f9c7f787575732436abc40e45ccc062c76093096e7c34c84b"
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@dice-roller/rpg-dice-roller@^5.2.1",
+        "npm:@netlify/functions@^2.8.1",
+        "npm:@sveltejs/vite-plugin-svelte@^1.0.1",
+        "npm:@tailwindcss/typography@^0.5.9",
+        "npm:@testing-library/svelte@^3.0.3",
+        "npm:@types/jest@^26.0.21",
+        "npm:@types/node@^14.18.47",
+        "npm:autoprefixer@^10.2.5",
+        "npm:babel-jest@^26.6.3",
+        "npm:canvas@^2.11.2",
+        "npm:cross-env@^7.0.3",
+        "npm:cssnano@^5.1.12",
+        "npm:jest@^26.6.3",
+        "npm:markdown-it@^13.0.1",
+        "npm:netlify-cli@^15.1.1",
+        "npm:netlify@^13.1.21",
+        "npm:postcss-load-config@^4.0.1",
+        "npm:postcss@^8.4.6",
+        "npm:svelte-jester@^1.3.1",
+        "npm:svelte-preprocess@^4.10.7",
+        "npm:svelte-routing@^1.6.0",
+        "npm:svelte@^3.35.0",
+        "npm:tailwindcss@^3.1.6",
+        "npm:timeago.js@^4.0.2",
+        "npm:ts-jest@^26.5.4",
+        "npm:turndown@^7.1.2",
+        "npm:typescript@^4.9.5",
+        "npm:vite-plugin-pwa@^0.15.1",
+        "npm:vite@^3.0.0"
+      ]
+    }
+  }
+}

@@ -7,10 +7,9 @@ export const handler: Handler = async (event, context) => {
       Authorization: `Client-ID ${process.env.ACCESS_KEY}`
     }
   });
-  const data = await response.json();
-
-  return {
+  const data = {
     statusCode: 200,
-    body: JSON.stringify(data),
-  }
+    body: JSON.stringify( await response.json()),
+  };
+  return data;
 }

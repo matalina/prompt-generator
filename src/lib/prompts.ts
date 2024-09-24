@@ -499,8 +499,6 @@ export let characters = [
 
 
 export async function getPrompt(index: number) {
-  return getRandomImage();
-
   switch (index) {
     case 0: return getRandomItem(personalExperiences);
     case 1: return getRandomItem(philosphicalMusings);
@@ -528,13 +526,9 @@ export async function getPrompt(index: number) {
 }
 
 export async function getRandomImage() {
-  const response = await fetch ('https://prompt.aj-hunter.com/.netlify/functions/random-image', {
-    method: 'get',
-    headers: {
-      'Content-Type': 'application/json',
-      accept: 'application/json',
-    }
-  });
-  const data = await response.json();
-
+    const response = await fetch ('http://localhost:8888/.netlify/functions/random-image', {
+      method: 'get',
+    });
+    const data = await response.json();
+    return `[![](${data.urls.regular})](${data.links.html})`;
 }

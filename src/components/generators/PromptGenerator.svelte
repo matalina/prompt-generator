@@ -9,13 +9,14 @@
   const md = new MarkdownIt();
   let answer;
 
-  function generate() {
+  async function generate() {
     answer = '';
 
     const generalTopic = getRandomItemWithIndex(generalTopics);
     answer += md.render(generalTopic.item) + '<br/>';
 
-    const specificTopic = getPrompt(generalTopic.index);
+    const specificTopic = await getPrompt(generalTopic.index);
+    console.log(specificTopic);
     answer += md.render(specificTopic) + '<br/>';
 
     const postType = getRandomItem(postTypes);
