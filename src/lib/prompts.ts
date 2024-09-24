@@ -530,5 +530,5 @@ export async function getRandomImage() {
       method: 'get',
     });
     const data = await response.json();
-    return `[![](${data.urls.regular})](${data.links.html})`;
+    return `<a href="${data.links.html}" target="_blank"><img src="${data.urls.regular}" alt="" /></a>`;
 }

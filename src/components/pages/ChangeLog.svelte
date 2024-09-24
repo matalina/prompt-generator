@@ -8,6 +8,13 @@
   <Markdown
   small={true}
   markdown={`
+#### 1.240924.07
+* Random Image opens in new tab
+`}
+/>
+  <Markdown
+  small={true}
+  markdown={`
 #### 1.240924.06
 * Allowed Mardown to have html
 `}
